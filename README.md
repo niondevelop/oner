@@ -1,3 +1,3 @@
 # oner
 a WonderCMS one-pager Template
-![alt text](https://raw.githubusercontent.com/niondevelop/oner/img/screencapture.png)
+![Alt text](oner/img/screencapture.png?raw=true "Optional Title")
