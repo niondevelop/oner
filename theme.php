@@ -168,7 +168,7 @@
         <h4 class="modal-title">Login</h4>
       </div>
       <div class="modal-body">
-<form action="http://develop.nion.ch/login" method="post"><div class="input-group"><input type="password" class="form-control" id="password" name="password"><span class="input-group-btn"><button type="submit" class="btn btn-info">Login</button></span></div></form>
+<form action="/login" method="post"><div class="input-group"><input type="password" class="form-control" id="password" name="password"><span class="input-group-btn"><button type="submit" class="btn btn-info">Login</button></span></div></form>
 
 
       </div>
