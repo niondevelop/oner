@@ -123,7 +123,7 @@
             			    if (empty($addition_content)) {
             			        // do something if the additional content doesn't exist, maybe don't
                 			} else { ?>
-                    			<div class="col-md-12" data-target="pages" class="<?php print $class; ?>" id="<?php print $numberOfContent; ?>"><?=$fetch;?></div>
+                    			<div class="col-md-12" data-target="pages" id="<?php print $numberOfContent; ?>"><?=$fetch;?></div>
                 		    <?php
                 			}
                 		}
