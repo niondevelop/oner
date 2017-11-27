@@ -100,6 +100,9 @@
             <h1 class="text-inverse"><?=wCMS::get('config','siteTitle')?></h1>
             <p class="text-inverse"><?php echo wCMS::page('description'); ?></p>
             <br>
+<?php if (wCMS::$currentPage == wCMS::get('config', 'login')) : ?>
+	<form action="<?php wCMS::url(wCMS::get('config', 'login'))?>" method="post"><div class="input-group"><input type="password" class="form-control" id="password" name="password"><span class="input-group-btn"><button type="submit" class="btn btn-info">Login</button></span></div></form>
+<?php endif; ?>
           </div>
         </div>
       </div>
@@ -137,7 +140,7 @@
 <?php endif; ?>
 
 
-	 <footer class="section section-primary" style="background-image: url('<?=wCMS::asset('img/footer.jpeg')?>')">
+    <footer class="section section-primary" style="background-image: url('<?=wCMS::asset('img/footer.jpeg')?>')">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -153,29 +156,17 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p class="text-center"><?=wCMS::footer()?><br><button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">Login</button></p>
+            	<p class="text-center">
+	
+<?=wCMS::block('footer')?>
+		</p>
           </div>
         </div>
       </div>
     </footer>
-<div id="myModal" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Login</h4>
-      </div>
-      <div class="modal-body">
-<form action="/login" method="post"><div class="input-group"><input type="password" class="form-control" id="password" name="password"><span class="input-group-btn"><button type="submit" class="btn btn-info">Login</button></span></div></form>
 
 
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+ 
 
   </div>
 </div>
